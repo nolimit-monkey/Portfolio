@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: var(--clr-light);
+  /* border: 2px solid red; */
+}
+
+.header__soleil,
+.header__barres {
+  color: var(--clr-slate100);
+  width: var(--size-lg);
+  height: var(--size-lg);
+  background-color: var(--clr-dark);
+  border: none;
+}

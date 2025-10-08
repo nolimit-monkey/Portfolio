@@ -1,0 +1,51 @@
+.apropos {
+  display: flex;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border: solid red;
+}
+
+.apropos__gauche {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+  font-size: var(--size-xl);
+  color: var(--clr-slate600);
+}
+
+.apropos img {
+  object-fit: contain;
+}
+
+.apropos__droite {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.apropos__titre {
+  color: var(--clr-light);
+  margin-bottom: 1rem;
+}
+
+.apropos__titre3 {
+  color: var(--clr-slate400);
+  margin-bottom: 1rem;
+  font-size: var(--size-lg);
+}
+
+.liste{
+    display: flex;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+
+ul{
+    list-style: none;
+}
+
+.pousse{
+     transform: translateY(-5px);
+}

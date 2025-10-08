@@ -1,0 +1,33 @@
+.presentation {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.presentation__photoprofil {
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+}
+
+.presentation_titre2 {
+  color: var(--clr-slate800);
+  font-size: var(--size-base);
+  line-height: 0.9;
+}
+
+.presentation__paragraphe {
+  max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+}
+
+.presentation__contacts {
+  text-transform: capitalize;
+  font-size: var(--size-sm);
+}
