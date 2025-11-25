@@ -8,6 +8,7 @@
   </head>
   <body>
     <script type="module" src="/src/main.js"></script>
+    <!--===================================================== Header ==============================================================-->
     <header class="header">
       <nav>
         <ul class="header__menu">
@@ -61,12 +62,13 @@
         </ul>
       </nav>
     </header>
-
+    <!--====================================================== Main ===============================================================-->
     <main>
+      <!--================================================ Présentation ==========================================================-->
       <section class="presentation">
         <img
           class="presentation__photoprofil"
-          src="/src/composants/images/awesome.jpg"
+          src="/public/awesome.jpg"
           alt="photo de profil"
         />
 
@@ -83,6 +85,7 @@
         <a href="" class="presentation__contacts btn"> Me contacter </a>
       </section>
 
+      <!--================================================== A propos ============================================================-->
       <section class="apropos">
         <div class="apropos__gauche">
           <div class="apropos__paragraphe">
@@ -103,21 +106,116 @@
             <hr class="ligne" />
           </div>
           <div class="liste">
-          <ul>
-              
-              <li><p class="pousse">👍</p> JavaScript (ES6+)</li>
-              <li><p class="pousse">👍</p> JavaScript (ES6+)</li>
-              <li><p class="pousse">👍</p> JavaScript (ES6+)</li>
-          </ul>
-          <ul>   
-              <li><p class="pousse">👍</p> JavaScript (ES6+)</li>
-              <li><p class="pousse">👍</p> JavaScript (ES6+)</li>
+            <ul>
+              <li>
+                <p class="pouce">👍</p>
+                JavaScript (ES6+)
+              </li>
+              <li>
+                <p class="pouce">👍</p>
+                JavaScript (ES6+)
+              </li>
+              <li>
+                <p class="pouce">👍</p>
+                JavaScript (ES6+)
+              </li>
             </ul>
-          </div>
+            <ul>
+              <li>
+                <p class="pouce">👍</p>
+                JavaScript (ES6+)
+              </li>
+              <li>
+                <p class="pouce">👍</p>
+                JavaScript (ES6+)
+              </li>
+            </ul>
           </div>
         </div>
         <div class="apropos__droite">
-          <img src="/src/composants/images/awesome.jpg" alt="photo de profil" />
+          <img src="/public/awesome.jpg" alt="photo de profil" />
+        </div>
+      </section>
+
+      <!--============================================= Projets Principaux =========================================================-->
+      <section class="projets">
+        <h3 class="projets__subtitle">Projets principaux</h3>
+        <div class="projets__wrapper">
+          <h2 class="projets__title">Mes projets</h2>
+          <a aria-label="link featured projects" class="projets__link" href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <p class="projets__description">
+          Cillum voluptate tempor cillum culpa cupidatat labore voluptate
+          ullamco voluptate culpa sunt nulla non. Ad cupidatat dolore quis amet
+          pariatur consectetur ullamco. Officia quis id velit duis cupidatat
+          sunt deserunt do aliquip nulla laboris.
+        </p>
+        <!-- Compétences -->
+        <div class="projets__info-container">
+          <div>
+            <h3 class="projets__label">Tech Stack</h3>
+            <ul class="projets__techstack">
+              <li class="projets__techstack-item">Laravel</li>
+              <li class="projets__techstack-item">Vue.js</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="projets__label">Project type</h3>
+            <p class="projets__info">Fullstack-Jamstack</p>
+          </div>
+          <div>
+            <h3 class="projets__label">Timeline</h3>
+            <p class="projets__info">Septembre 2024 - present</p>
+          </div>
+        </div>
+        <!-- Images Projets -->
+        <div class="projets__img-container">
+          <div class="projets__img-wrapper">
+            <img
+              class="lazy_loading"
+              src="/public/image.png"
+              data-src="/1.jpg"
+              alt="Slaying The Dragon hero"
+            />
+          </div>
+          <div class="projets__img-wrapper">
+            <img
+              class="lazy loading"
+              src="/public/image.png"
+              data-src="/2.jpg"
+              alt="Slaying The Dragon courses"
+            />
+          </div>
+          <div class="projets__img-wrapper">
+            <img
+              class="lazy loading"
+              src="/public/image.png"
+              data-src="/3.jpg"
+              alt="Slaying The Dragon pricing"
+            />
+          </div>
+          <div class="projets__img-wrapper">
+            <img
+              class="lazy loading"
+              src="/public/image.png"
+              data-src="/4.jpg"
+              alt="Slaying The Dragon features"
+            />
+          </div>
         </div>
       </section>
     </main>

@@ -4,3 +4,4 @@ import "./utilitaire.css";
 import "./modern-normalize.css";
 import "./composants/presentation.css";
 import "./composants/apropos.css";
+import "./composants/projets.css";

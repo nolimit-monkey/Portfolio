@@ -2,15 +2,14 @@
   display: flex;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  border: solid red;
 }
 
 .apropos__gauche {
+  text-align: justify;
   width: 50%;
   height: 100%;
-  padding: 2rem;
-  font-size: var(--size-xl);
-  color: var(--clr-slate600);
+  padding: 4rem;
+  color: var(--clr-light);
 }
 
 .apropos img {
@@ -27,7 +26,6 @@
 
 .apropos__titre {
   color: var(--clr-light);
-  margin-bottom: 1rem;
 }
 
 .apropos__titre3 {
@@ -36,16 +34,16 @@
   font-size: var(--size-lg);
 }
 
-.liste{
-    display: flex;
-    flex-wrap: wrap;
-    gap:3rem;
+.liste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.pousse{
-     transform: translateY(-5px);
+.pouce {
+  transform: translateY(5px);
 }
