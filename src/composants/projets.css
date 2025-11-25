@@ -1,6 +1,7 @@
 .projets {
   margin-top: 5rem 0rem;
   padding: 4rem;
+  border: 1px solid;
 }
 
 .projets__wrapper {
@@ -72,13 +73,12 @@ svg {
 .projets__img-container {
   margin: 1rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 2rem;
 }
 
 .projets__img-wrapper {
   position: relative;
-  width: 100%;
 }
 
 .projets__img-wrapper:after {
@@ -98,10 +98,14 @@ svg {
 }
 
 .projets__img-wrapper:hover:after {
-  background-color: #4f46e51a;
+  background-color: #4f46e54d;
 }
 
 .projets img {
-  height: auto;
+  display: block;
   width: 100%;
+  max-width: 700px; /* adjust this value if you want smaller/larger images */
+  height: auto;
+  margin: 0 auto;
+  object-fit: cover;
 }
