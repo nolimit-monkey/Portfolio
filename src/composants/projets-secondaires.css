@@ -56,12 +56,12 @@
 .projets-secondaires__description1 {
   font-size: var(--size-lg);
   color: var(--clr-slate600);
-  margin-bottom: 1rem;
+  margin: 1em 0;
 }
 
 .projets-secondaires__description2 {
   font-size: var(--size-lg);
-  margin-bottom: 1rem;
+  margin: 1em 0;
 }
 
 .projets-secondaires__btn {

@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10rem 0rem;
+  gap: 2rem;
+}
+
+.contact__title {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-transform: capitalize;
+}
+
+.contact__description {
+  font-size: var(--size-xl);
+  color: var(--clr-slate600);
+  max-width: 60ch;
+}
+
+.contact__btn {
+  font-size: var(--size-xl);
+}
