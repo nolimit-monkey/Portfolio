@@ -13,7 +13,6 @@
 .header__link {
   text-decoration: none;
   color: var(--clr-light);
-  /* border: 2px solid red; */
 }
 
 .header__soleil,
