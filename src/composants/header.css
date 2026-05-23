@@ -2,24 +2,99 @@
   display: flex;
   justify-content: flex-end;
   padding: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .header__menu {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
+.header__item {
+  position: relative;
+}
+
+.header__item--dropdown {
+  padding-bottom: 0.75rem;
+  margin-bottom: -0.75rem;
+}
+
 .header__link {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+  color: var(--clr-light);
+  padding: 0.35rem 0;
+}
+
+.header__link[aria-current="page"] {
+  color: var(--clr-rose);
+}
+
+.header__submenu {
+  list-style: none;
+  position: absolute;
+  top: calc(100% - 0.1rem);
+  left: 50%;
+  min-width: 15rem;
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.35rem;
+  background-color: var(--clr-slate800);
+  border: 1px solid color-mix(in oklab, var(--clr-slate400) 30%, transparent);
+  border-radius: 0.75rem;
+  box-shadow: 0 16px 40px color-mix(in oklab, var(--clr-dark) 70%, transparent);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(0.5rem);
+  transition:
+    opacity 150ms ease,
+    transform 150ms ease,
+    visibility 150ms ease;
+}
+
+.header__item--dropdown:hover .header__submenu,
+.header__item--dropdown:focus-within .header__submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+.header__sublink {
+  display: block;
+  text-decoration: none;
+  color: var(--clr-light);
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.header__sublink:hover,
+.header__sublink:focus-visible,
+.header__sublink[aria-current="page"] {
+  background-color: color-mix(in oklab, var(--clr-indigo) 32%, var(--clr-slate800));
   color: var(--clr-light);
 }
 
-.header__soleil,
-.header__barres {
-  color: var(--clr-slate100);
+.header__link:focus-visible,
+.header__sublink:focus-visible,
+.header__soleil:focus-visible {
+  outline: 2px solid var(--clr-rose);
+  outline-offset: 3px;
+}
+
+.header__soleil {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-light);
   width: var(--size-lg);
   height: var(--size-lg);
   background-color: var(--clr-dark);
   border: none;
+  cursor: pointer;
 }

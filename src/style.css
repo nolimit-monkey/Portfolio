@@ -35,3 +35,7 @@ body {
   background-color: var(--clr-dark);
   color: var(--clr-light);
 }
+
+.page {
+  min-height: calc(100vh - 6rem);
+}
