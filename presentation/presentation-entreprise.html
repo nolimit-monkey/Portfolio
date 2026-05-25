@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -10,11 +10,18 @@
     <script type="module" src="/src/main.js"></script>
     <div data-site-header></div>
     <main class="page">
-
       <!-- ── Hero ──────────────────────────────────────────────── -->
       <section class="presentation">
-        <div class="entreprise-logo">CSI</div>
-        <h2 class="entreprise-hero__subtitle">Carrefour Systèmes d'Information</h2>
+        <div class="entreprise-logo">
+          <img
+            src="/Logo_Carrefour.svg.webp"
+            alt="Logo Carrefour"
+            class="entreprise-logo__img"
+          />
+        </div>
+        <h2 class="entreprise-hero__subtitle">
+          Carrefour Systèmes d'Information
+        </h2>
         <h1 class="entreprise-hero__titre">Carrefour CSI</h1>
         <p class="apprenti-hero__ecole">Massy — Île-de-France (91300)</p>
       </section>
@@ -24,13 +31,14 @@
         <div class="apropos__gauche">
           <h1 class="apropos__titre">L'entreprise</h1>
           <p>
-            <strong class="apprenti-entreprise">Carrefour Systèmes d'Information
-            (Carrefour CSI)</strong> est la filiale informatique du groupe
-            Carrefour, l'un des leaders mondiaux de la grande distribution.
-            Basée à Massy en Île-de-France, Carrefour CSI conçoit, développe
-            et maintient les systèmes d'information du groupe Carrefour en
-            France, au service des équipes métier, des magasins et des millions
-            de clients.
+            <strong class="apprenti-entreprise"
+              >Carrefour Systèmes d'Information (Carrefour CSI)</strong
+            >
+            est la filiale informatique du groupe Carrefour, l'un des leaders
+            mondiaux de la grande distribution. Basée à Massy en Île-de-France,
+            Carrefour CSI conçoit, développe et maintient les systèmes
+            d'information du groupe Carrefour en France, au service des équipes
+            métier, des magasins et des millions de clients.
           </p>
           <br />
           <p>
@@ -45,11 +53,15 @@
           <div class="entreprise-info-card">
             <div class="entreprise-info-card__item">
               <span class="entreprise-info-card__label">Secteur</span>
-              <span class="entreprise-info-card__value">Grande distribution</span>
+              <span class="entreprise-info-card__value"
+                >Grande distribution</span
+              >
             </div>
             <div class="entreprise-info-card__item">
               <span class="entreprise-info-card__label">Siège social</span>
-              <span class="entreprise-info-card__value">Massy, Île-de-France</span>
+              <span class="entreprise-info-card__value"
+                >Massy, Île-de-France</span
+              >
             </div>
             <div class="entreprise-info-card__item">
               <span class="entreprise-info-card__label">Fondé</span>
@@ -57,7 +69,9 @@
             </div>
             <div class="entreprise-info-card__item">
               <span class="entreprise-info-card__label">Statut</span>
-              <span class="entreprise-info-card__value">CAC 40 · Euronext Paris</span>
+              <span class="entreprise-info-card__value"
+                >CAC 40 · Euronext Paris</span
+              >
             </div>
           </div>
         </div>
@@ -70,11 +84,15 @@
         <div class="entreprise-stats-grid">
           <div class="entreprise-stat-card">
             <span class="entreprise-stat-card__value">+320 000</span>
-            <span class="entreprise-stat-card__label">Collaborateurs dans le monde</span>
+            <span class="entreprise-stat-card__label"
+              >Collaborateurs dans le monde</span
+            >
           </div>
           <div class="entreprise-stat-card">
             <span class="entreprise-stat-card__value">2<sup>e</sup></span>
-            <span class="entreprise-stat-card__label">Distributeur mondial</span>
+            <span class="entreprise-stat-card__label"
+              >Distributeur mondial</span
+            >
           </div>
           <div class="entreprise-stat-card">
             <span class="entreprise-stat-card__value">+30</span>
@@ -82,7 +100,9 @@
           </div>
           <div class="entreprise-stat-card">
             <span class="entreprise-stat-card__value">~88 Md€</span>
-            <span class="entreprise-stat-card__label">Chiffre d'affaires (2023)</span>
+            <span class="entreprise-stat-card__label"
+              >Chiffre d'affaires (2023)</span
+            >
           </div>
         </div>
       </section>
@@ -94,36 +114,67 @@
           <h2 class="projets__title">Le service informatique</h2>
         </div>
         <p class="projets__description">
-          Carrefour CSI est organisée en équipes produit autonomes selon une
-          méthodologie <strong class="apprenti-entreprise">Agile</strong> —
-          tribues et squads. Chaque équipe prend en charge un domaine
-          fonctionnel précis et assure en continu la livraison de valeur pour
-          l'ensemble des activités du groupe.
+          Carrefour CSI est organisée en plusieurs entités distinctes qui
+          collaborent pour assurer l'informatique globale du groupe, aussi bien
+          en interne pour les équipes métier qu'en externe pour les clients et
+          partenaires.
         </p>
         <div class="entreprise-activites-grid">
           <div class="entreprise-activite-card">
-            <h3>Développement applicatif</h3>
-            <p>Conception et développement des applications métier et client à grande échelle.</p>
+            <h3>Infrastructure</h3>
+            <p>
+              Gestion des serveurs, du stockage et des équipements physiques qui
+              supportent l'ensemble des systèmes du groupe.
+            </p>
           </div>
           <div class="entreprise-activite-card">
-            <h3>Infrastructure Cloud</h3>
-            <p>Gestion de l'infrastructure sur Google Cloud Platform et Microsoft Azure.</p>
+            <h3>Cloud</h3>
+            <p>
+              Pilotage des environnements cloud (GCP, Azure) et accompagnement
+              des équipes dans la migration et l'exploitation cloud-native.
+            </p>
           </div>
           <div class="entreprise-activite-card">
-            <h3>Monitoring &amp; Observabilité</h3>
-            <p>Surveillance de la performance et disponibilité des systèmes avec Grafana, Dynatrace et Prometheus.</p>
+            <h3>E-commerce</h3>
+            <p>
+              Développement et maintien des plateformes de vente en ligne et des
+              programmes de fidélité client à l'échelle nationale.
+            </p>
           </div>
           <div class="entreprise-activite-card">
-            <h3>CI/CD &amp; DevOps</h3>
-            <p>Automatisation des pipelines de déploiement et intégration continue pour des livraisons rapides.</p>
+            <h3>Software Factory</h3>
+            <p>
+              Fourniture des outils, pratiques DevOps et pipelines CI/CD communs
+              à l'ensemble des équipes de développement du groupe.
+            </p>
           </div>
           <div class="entreprise-activite-card">
-            <h3>E-commerce &amp; Fidélité</h3>
-            <p>Développement des plateformes en ligne et des programmes de fidélité client.</p>
+            <h3>Support IT</h3>
+            <p>
+              Assistance aux utilisateurs internes, gestion des incidents et
+              maintien en condition opérationnelle des postes de travail.
+            </p>
           </div>
           <div class="entreprise-activite-card">
-            <h3>Support &amp; Maintenance</h3>
-            <p>Continuité de service et maintenance évolutive des applications critiques.</p>
+            <h3>Services Réseaux</h3>
+            <p>
+              Administration des réseaux LAN/WAN reliant les sièges, entrepôts
+              et points de vente, avec garantie de disponibilité et de sécurité.
+            </p>
+          </div>
+          <div class="entreprise-activite-card">
+            <h3>Cybersécurité Groupe</h3>
+            <p>
+              Protection des systèmes et des données du groupe contre les
+              cybermenaces, définition des politiques de sécurité et audits.
+            </p>
+          </div>
+          <div class="entreprise-activite-card">
+            <h3>Plateforme Data</h3>
+            <p>
+              Centralisation, gouvernance et valorisation des données du groupe
+              pour alimenter les décisions métier et les usages analytiques.
+            </p>
           </div>
         </div>
       </section>
@@ -133,7 +184,6 @@
         <h3 class="projets__subtitle">Environnement technique</h3>
         <h2 class="apprenti-competences__titre">Technologies utilisées</h2>
         <div class="apprenti-skills-grid">
-
           <div class="apprenti-skills-category">
             <h3 class="apprenti-skills-category__title">Développement</h3>
             <ul class="apprenti-skills-list">
@@ -178,14 +228,15 @@
               <li>Git / GitHub</li>
             </ul>
           </div>
-
         </div>
       </section>
 
       <!-- ── Ma position ───────────────────────────────────────── -->
       <section class="entreprise-position">
         <h3 class="projets__subtitle">Mon intégration</h3>
-        <h2 class="entreprise-position__titre">Ma position dans l'entreprise</h2>
+        <h2 class="entreprise-position__titre">
+          Ma position dans l'entreprise
+        </h2>
         <p class="projets__description">
           En tant qu'apprenti BTS SIO option SLAM, j'intègre une équipe produit
           dédiée au développement logiciel. Je travaille en collaboration avec
@@ -193,16 +244,24 @@
           cadre d'une organisation Agile (squad).
         </p>
         <div class="entreprise-organigramme">
-
           <div class="entreprise-org-node entreprise-org-node--top">
             <span>DSI</span>
-            <small>Direction des Systèmes d'Information</small>
+            <small>Vincent Cotteaux</small>
           </div>
           <div class="entreprise-org-ligne"></div>
 
           <div class="entreprise-org-row">
             <div class="entreprise-org-node">
-              <span>Directeur Produit</span>
+              <span>Directeur Infra Core</span>
+              <small>Sébastien Kehil</small>
+            </div>
+          </div>
+          <div class="entreprise-org-ligne"></div>
+
+          <div class="entreprise-org-row">
+            <div class="entreprise-org-node">
+              <span>Product Manager</span>
+              <small>Stéphane Di Cioccio</small>
             </div>
           </div>
           <div class="entreprise-org-ligne"></div>
@@ -210,26 +269,15 @@
           <div class="entreprise-org-row">
             <div class="entreprise-org-node">
               <span>Product Owner</span>
-            </div>
-            <div class="entreprise-org-node">
-              <span>Tech Lead</span>
-            </div>
-          </div>
-          <div class="entreprise-org-ligne"></div>
-
-          <div class="entreprise-org-row">
-            <div class="entreprise-org-node">
-              <span>Développeurs</span>
+              <small>Vincent Ragon (tuteur)</small>
             </div>
             <div class="entreprise-org-node entreprise-org-node--moi">
               <span>Apprenti</span>
               <small>Mandresy RAPHEHISON</small>
             </div>
           </div>
-
         </div>
       </section>
-
     </main>
     <footer class="footer container section">
       <h3 class="footer__title">~ Mandresy RAPHEHISON ~</h3>

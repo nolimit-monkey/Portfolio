@@ -1,16 +1,19 @@
 /* ── Hero logo ─────────────────────────────────────────── */
 .entreprise-logo {
-  width: 5rem;
-  height: 5rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
-  background-color: var(--clr-rose);
-  color: var(--clr-light);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--size-2xl);
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  overflow: hidden;
+}
+
+.entreprise-logo__img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
 }
 
 .entreprise-hero__subtitle {
