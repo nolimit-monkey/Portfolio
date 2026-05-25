@@ -8,6 +8,7 @@ import "./composants/projets.css";
 import "./composants/projets-secondaires.css";
 import "./composants/footer.css";
 import "./composants/presentation-apprenti.css";
+import "./composants/presentation-entreprise.css";
 import "./composants/contact.css";
 import { renderHeader } from "./composants/header.js";
 
