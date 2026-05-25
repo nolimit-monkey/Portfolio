@@ -1,0 +1,210 @@
+/* ── Hero logo ─────────────────────────────────────────── */
+.entreprise-logo {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.entreprise-logo__img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+
+.entreprise-hero__subtitle {
+  font-size: var(--size-lg);
+  color: var(--clr-slate400);
+  text-align: center;
+}
+
+.entreprise-hero__titre {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* ── Info card (droite) ─────────────────────────────────── */
+.entreprise-info-card {
+  background-color: var(--clr-slate800);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border: 1px solid var(--clr-slate600);
+  min-width: 260px;
+}
+
+.entreprise-info-card__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.entreprise-info-card__label {
+  font-size: var(--size-xs);
+  color: var(--clr-indigo);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.entreprise-info-card__value {
+  font-size: var(--size-base);
+  color: var(--clr-light);
+}
+
+/* ── Chiffres clés ─────────────────────────────────────── */
+.entreprise-chiffres {
+  padding: 4rem;
+  margin-top: 2rem;
+}
+
+.entreprise-chiffres__titre {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.entreprise-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.entreprise-stat-card {
+  background-color: var(--clr-slate800);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  border: 1px solid var(--clr-slate600);
+}
+
+.entreprise-stat-card__value {
+  font-size: var(--size-4xl);
+  font-weight: 700;
+  color: var(--clr-rose);
+  line-height: 1;
+}
+
+.entreprise-stat-card__value sup {
+  font-size: var(--size-xl);
+}
+
+.entreprise-stat-card__label {
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+}
+
+/* ── Service informatique ──────────────────────────────── */
+.entreprise-si {
+  padding: 4rem;
+  margin-top: 2rem;
+}
+
+.entreprise-activites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.entreprise-activite-card {
+  background-color: var(--clr-slate800);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border-left: 3px solid var(--clr-indigo);
+}
+
+.entreprise-activite-card h3 {
+  font-size: var(--size-lg);
+  color: var(--clr-light);
+  margin-bottom: 0.5rem;
+}
+
+.entreprise-activite-card p {
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+  line-height: 1.6;
+}
+
+/* ── Position / Organigramme ───────────────────────────── */
+.entreprise-position {
+  padding: 4rem;
+  margin-bottom: 5rem;
+}
+
+.entreprise-position__titre {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.entreprise-organigramme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.entreprise-org-node {
+  background-color: var(--clr-slate800);
+  border: 1px solid var(--clr-slate600);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  min-width: 160px;
+}
+
+.entreprise-org-node--top {
+  border-color: var(--clr-indigo);
+  border-width: 2px;
+}
+
+.entreprise-org-node--moi {
+  border-color: var(--clr-rose);
+  border-width: 2px;
+}
+
+.entreprise-org-node span {
+  font-size: var(--size-sm);
+  color: var(--clr-light);
+  font-weight: 600;
+  display: block;
+}
+
+.entreprise-org-node small {
+  font-size: var(--size-xs);
+  color: var(--clr-rose);
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.entreprise-org-node--top small {
+  color: var(--clr-indigo);
+}
+
+.entreprise-org-ligne {
+  width: 2px;
+  height: 1.5rem;
+  background-color: var(--clr-slate600);
+}
+
+.entreprise-org-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
