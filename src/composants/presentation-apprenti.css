@@ -1,0 +1,133 @@
+/* ── Hero apprenti ─────────────────────────────────────── */
+.apprenti-hero__titre {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-align: center;
+  line-height: 1.1;
+}
+
+.apprenti-hero__ecole {
+  font-size: var(--size-lg);
+  color: var(--clr-slate400);
+  text-align: center;
+}
+
+/* ── Espacement de ligne dans la présentation ──────────── */
+.apropos__gauche p {
+  line-height: 1.9;
+}
+
+/* ── Entreprise highlight ──────────────────────────────── */
+.apprenti-entreprise {
+  color: var(--clr-rose);
+  font-style: normal;
+}
+
+/* ── Compétences ───────────────────────────────────────── */
+.apprenti-competences {
+  padding: 4rem;
+  margin-top: 2rem;
+}
+
+.apprenti-competences__titre {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.apprenti-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+}
+
+.apprenti-skills-category__title {
+  font-size: var(--size-lg);
+  color: var(--clr-indigo);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.apprenti-skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.apprenti-skills-list li {
+  font-size: var(--size-sm);
+  color: var(--clr-slate400);
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--clr-rose);
+  line-height: 1.5;
+}
+
+/* ── Formation ─────────────────────────────────────────── */
+.apprenti-formation {
+  padding: 4rem;
+  margin-top: 2rem;
+}
+
+/* ── Parcours / Timeline ───────────────────────────────── */
+.apprenti-parcours {
+  padding: 4rem;
+  margin-bottom: 5rem;
+}
+
+.apprenti-parcours__titre {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.apprenti-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-left: 2px solid var(--clr-rose);
+  padding-left: 2rem;
+  max-width: 720px;
+}
+
+.apprenti-timeline__item {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.apprenti-timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -2.45rem;
+  top: 0.4rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--clr-rose);
+  flex-shrink: 0;
+}
+
+.apprenti-timeline__date {
+  font-size: var(--size-sm);
+  color: var(--clr-rose);
+  font-weight: 600;
+  min-width: 110px;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.apprenti-timeline__content h3 {
+  font-size: var(--size-xl);
+  color: var(--clr-light);
+  margin-bottom: 0.3rem;
+}
+
+.apprenti-timeline__content p {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  margin-top: 0.25rem;
+  text-align: justify;
+}
