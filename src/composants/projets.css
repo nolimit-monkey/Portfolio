@@ -1,7 +1,4 @@
-.projets {
-  margin-top: 5rem 0rem;
-  padding: 4rem;
-}
+/* Classes utilisées dans presentation-apprenti.html */
 
 .projets__wrapper {
   display: flex;
@@ -20,17 +17,6 @@
   font-size: var(--size-5xl);
   color: var(--clr-light);
   text-transform: uppercase;
-}
-
-.projets__link {
-  width: var(--size-2xl);
-  height: var(--size-2xl);
-  color: var(--clr-rose);
-}
-
-svg {
-  width: 1rem;
-  height: 1rem;
 }
 
 .projets__description {
@@ -58,53 +44,8 @@ svg {
   margin-bottom: 0.25em;
 }
 
-.projets__techstack {
-  padding: 0;
-  list-style: none;
-}
-
 .projets__info {
   font-size: var(--size-xl);
   color: var(--clr-slate600);
   text-transform: capitalize;
-}
-
-.projets__img-container {
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 2rem;
-}
-
-.projets__img-wrapper {
-  position: relative;
-}
-
-.projets__img-wrapper:after {
-  content: "";
-  background-color: #4f46e566;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: background-color 0.3s;
-}
-
-.featured__description {
-  text-align: justify;
-}
-
-.projets__img-wrapper:hover:after {
-  background-color: #4f46e54d;
-}
-
-.projets img {
-  display: block;
-  width: 100%;
-  max-width: 700px; /* adjust this value if you want smaller/larger images */
-  height: auto;
-  margin: 0 auto;
-  object-fit: cover;
 }

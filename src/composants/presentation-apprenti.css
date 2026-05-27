@@ -70,6 +70,51 @@
   margin-top: 2rem;
 }
 
+/* ── Info card à propos droite ─────────────────────────── */
+.apprenti-infocard {
+  background: var(--clr-slate800);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 360px;
+}
+
+.apprenti-infocard__row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--clr-slate600);
+}
+
+.apprenti-infocard__row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.apprenti-infocard__label {
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-indigo);
+  font-weight: 600;
+}
+
+.apprenti-infocard__value {
+  font-size: var(--size-base);
+  color: var(--clr-light);
+}
+
+.apprenti-infocard__link {
+  font-size: var(--size-base);
+  color: var(--clr-rose);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* ── Parcours / Timeline ───────────────────────────────── */
 .apprenti-parcours {
   padding: 4rem;

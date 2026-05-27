@@ -4,11 +4,111 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Situations</title>
+    <title>Situations professionnelles — E6</title>
   </head>
   <body>
     <script type="module" src="/src/main.js"></script>
     <div data-site-header></div>
-    <main class="page"></main>
+    <main class="page missions">
+
+      <div class="missions__header">
+        <h3 class="missions__subtitle">Epreuve E6</h3>
+        <h1 class="missions__title">Situations professionnelles</h1>
+        <p class="missions__intro">
+          Dans le cadre de l'épreuve E6 du BTS SIO option SLAM, deux réalisations
+          professionnelles ont été effectuées en formation au Campus Montsouris — Session 2026.
+        </p>
+        <hr class="ligne" />
+      </div>
+
+      <div class="situations__grid">
+
+        <!-- Réalisation N°1 — BelleTable -->
+        <article class="situation__card">
+          <div class="situation__card-header">
+            <span class="situation__num">Réalisation N°1</span>
+            <h2 class="situation__title">Gestion de Questionnaire</h2>
+            <p class="situation__entreprise">BelleTable</p>
+          </div>
+          <div class="situation__card-body">
+            <p class="situation__description">
+              Développement d'une application métier permettant de concevoir et
+              d'enregistrer des questionnaires dans une base de données, dans le
+              cadre d'une politique de qualité. Application Desktop (Windows-Form)
+              complétée d'un accès Web.
+            </p>
+            <div class="situation__meta">
+              <div>
+                <span class="situation__label">Période</span>
+                <span class="situation__value">Février – Mars 2026</span>
+              </div>
+              <div>
+                <span class="situation__label">Lieu</span>
+                <span class="situation__value">Campus Montsouris, Paris 14</span>
+              </div>
+              <div>
+                <span class="situation__label">Modalité</span>
+                <span class="situation__value">Seul</span>
+              </div>
+            </div>
+            <div class="situation__techstack">
+              <span class="situation__tech">C#</span>
+              <span class="situation__tech">Visual Studio</span>
+              <span class="situation__tech">MySQL</span>
+              <span class="situation__tech">PHP</span>
+              <span class="situation__tech">MVC</span>
+            </div>
+            <div class="situation__links">
+              <a class="btn" href="/pdfs/e6/Fiche_BelleTable.pdf" target="_blank">Voir la fiche</a>
+              <a class="situation__link-secondary" href="https://github.com/nolimit-monkey/BelleTable" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Réalisation N°2 — Axiom -->
+        <article class="situation__card">
+          <div class="situation__card-header">
+            <span class="situation__num">Réalisation N°2</span>
+            <h2 class="situation__title">Site e-commerce pièces automobiles</h2>
+            <p class="situation__entreprise">Axiom</p>
+          </div>
+          <div class="situation__card-body">
+            <p class="situation__description">
+              Développement d'un site e-commerce complet de vente de pièces
+              automobiles avec panier, tunnel de commande et paiement simulé.
+              Site fonctionnel permettant l'achat de produits en ligne.
+            </p>
+            <div class="situation__meta">
+              <div>
+                <span class="situation__label">Période</span>
+                <span class="situation__value">Mars – Avril 2026</span>
+              </div>
+              <div>
+                <span class="situation__label">Lieu</span>
+                <span class="situation__value">Campus Montsouris, Paris 14</span>
+              </div>
+              <div>
+                <span class="situation__label">Modalité</span>
+                <span class="situation__value">Seul</span>
+              </div>
+            </div>
+            <div class="situation__techstack">
+              <span class="situation__tech">PHP</span>
+              <span class="situation__tech">HTML / CSS</span>
+              <span class="situation__tech">MySQL</span>
+              <span class="situation__tech">VS Code</span>
+            </div>
+            <div class="situation__links">
+              <a class="btn" href="/pdfs/e6/Fiche_Axiom.pdf" target="_blank">Voir la fiche</a>
+              <a class="situation__link-secondary" href="https://github.com/nolimit-monkey/Site-Axiom" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Mandresy RAPHEHISON ~</h3>
+    </footer>
   </body>
 </html>

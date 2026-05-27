@@ -1,0 +1,114 @@
+.veille__section {
+  margin-bottom: 4rem;
+}
+
+.veille__section-title {
+  font-size: var(--size-3xl);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--clr-slate800);
+}
+
+.veille__text {
+  font-size: var(--size-lg);
+  color: var(--clr-slate400);
+  max-width: 72ch;
+  line-height: 1.7;
+}
+
+/* Articles */
+.veille__articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.veille__article-card {
+  background: var(--clr-slate800);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.veille__article-card:hover {
+  transform: translateY(-3px);
+}
+
+.veille__article-tag {
+  font-size: var(--size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-indigo);
+  font-weight: 600;
+}
+
+.veille__article-title {
+  font-size: var(--size-xl);
+  color: var(--clr-light);
+}
+
+.veille__article-body {
+  font-size: var(--size-base);
+  color: var(--clr-slate400);
+  line-height: 1.7;
+}
+
+/* Sources grid */
+.veille__sources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.veille__source-card {
+  background: var(--clr-slate800);
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: transform 0.2s;
+}
+
+.veille__source-card:hover {
+  transform: translateY(-3px);
+}
+
+.veille__source-cat {
+  font-size: var(--size-xxs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-rose);
+  font-weight: 600;
+}
+
+.veille__source-name {
+  font-size: var(--size-lg);
+  color: var(--clr-light);
+}
+
+.veille__source-desc {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  line-height: 1.5;
+}
+
+/* Conclusion */
+.veille__conclusion {
+  border-left: 3px solid var(--clr-rose);
+  padding-left: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.veille__conclusion-text {
+  font-size: var(--size-xl);
+  color: var(--clr-slate400);
+  font-style: italic;
+  line-height: 1.7;
+  max-width: 65ch;
+}
