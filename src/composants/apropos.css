@@ -12,10 +12,6 @@
   color: var(--clr-light);
 }
 
-.apropos img {
-  object-fit: contain;
-}
-
 .apropos__droite {
   width: 50%;
   display: flex;
@@ -26,24 +22,4 @@
 
 .apropos__titre {
   color: var(--clr-light);
-}
-
-.apropos__titre3 {
-  color: var(--clr-slate400);
-  margin-bottom: 1rem;
-  font-size: var(--size-lg);
-}
-
-.liste {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-ul {
-  list-style: none;
-}
-
-.pouce {
-  transform: translateY(5px);
 }

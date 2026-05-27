@@ -1,0 +1,199 @@
+.missions {
+  padding: 4rem;
+}
+
+.missions__header {
+  max-width: 70ch;
+  margin-bottom: 3rem;
+}
+
+.missions__subtitle {
+  font-size: var(--size-xl);
+  color: var(--clr-indigo);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.missions__title {
+  font-size: var(--size-5xl);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.missions__intro {
+  font-size: var(--size-xl);
+  color: var(--clr-slate600);
+  margin-bottom: 1.5rem;
+}
+
+.missions__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Bloc par fiche — même style que projets__img-wrapper */
+.missions__fiche {
+  position: relative;
+}
+
+.missions__fiche-title {
+  font-size: var(--size-xl);
+  color: var(--clr-rose);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.missions__fiche-iframe-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.missions__fiche-iframe-wrapper::after {
+  content: "";
+  background-color: #4f46e566;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color 0.3s;
+  pointer-events: none;
+}
+
+.missions__fiche-iframe-wrapper:hover::after {
+  background-color: #4f46e54d;
+}
+
+.missions__fiche-iframe-wrapper--no-overlay::after {
+  display: none;
+}
+
+/* Embed PDF */
+.missions__pdf-embed {
+  width: 100%;
+  height: 420px;
+  border: none;
+  background: var(--clr-slate800);
+  display: block;
+}
+
+/* Pleine hauteur pour documents uniques (tableau de synthèse) */
+.missions__pdf-embed--full {
+  height: 85vh;
+}
+
+/* ── Situations E6 ── */
+.situations__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.situation__card {
+  background: var(--clr-slate800);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+}
+
+.situation__card:hover {
+  transform: translateY(-4px);
+}
+
+.situation__card-header {
+  background: var(--clr-indigo);
+  padding: 1.5rem;
+}
+
+.situation__num {
+  font-size: var(--size-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: oklch(80% 0.1 276);
+}
+
+.situation__title {
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+  margin: 0.4rem 0 0.25rem;
+}
+
+.situation__entreprise {
+  font-size: var(--size-lg);
+  color: var(--clr-rose);
+  font-weight: 600;
+}
+
+.situation__card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.situation__description {
+  font-size: var(--size-base);
+  color: var(--clr-slate400);
+  line-height: 1.6;
+}
+
+.situation__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.situation__meta div {
+  display: flex;
+  gap: 0.5rem;
+  font-size: var(--size-sm);
+}
+
+.situation__label {
+  color: var(--clr-slate600);
+  min-width: 5rem;
+}
+
+.situation__value {
+  color: var(--clr-light);
+}
+
+.situation__techstack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.situation__tech {
+  font-size: var(--size-xs);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: var(--clr-slate600);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.situation__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.situation__link-secondary {
+  font-size: var(--size-sm);
+  color: var(--clr-rose);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

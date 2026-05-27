@@ -4,11 +4,121 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veille</title>
+    <title>Veille Technologique — Observabilité</title>
   </head>
   <body>
     <script type="module" src="/src/main.js"></script>
     <div data-site-header></div>
-    <main class="page"></main>
+    <main class="page missions">
+
+      <!-- En-tête -->
+      <div class="missions__header">
+        <h3 class="missions__subtitle">Veille technologique</h3>
+        <h1 class="missions__title">Observabilité</h1>
+        <p class="missions__intro">
+          Suivi des tendances, bonnes pratiques et innovations dans le domaine
+          de l'observabilité (logs, métriques, traces) appliquée aux
+          architectures modernes.
+        </p>
+        <hr class="ligne" />
+      </div>
+
+      <!-- Objectif -->
+      <section class="veille__section">
+        <h2 class="veille__section-title">Objectif</h2>
+        <p class="veille__text">
+          Cette veille vise à identifier et suivre les tendances, bonnes
+          pratiques et innovations dans le domaine de l'observabilité — logs,
+          métriques, traces — appliquée aux architectures modernes et systèmes
+          distribués.
+        </p>
+      </section>
+
+      <!-- Articles -->
+      <section class="veille__section">
+        <h2 class="veille__section-title">Articles</h2>
+        <div class="veille__articles">
+
+          <article class="veille__article-card">
+            <div class="veille__article-tag">Article 1</div>
+            <h3 class="veille__article-title">L'observabilité moderne</h3>
+            <p class="veille__article-body">
+              Les systèmes distribués nécessitent une corrélation fine entre
+              logs, métriques et traces afin de diagnostiquer les incidents en
+              temps réel. Sans cette vision unifiée, identifier la cause racine
+              d'un dysfonctionnement devient rapidement impossible à l'échelle.
+            </p>
+          </article>
+
+          <article class="veille__article-card">
+            <div class="veille__article-tag">Article 2</div>
+            <h3 class="veille__article-title">OpenTelemetry comme standard</h3>
+            <p class="veille__article-body">
+              OpenTelemetry s'impose comme standard ouvert pour instrumenter
+              les applications et centraliser les données d'observabilité.
+              Soutenu par la CNCF, il unifie la collecte de signaux (traces,
+              métriques, logs) à travers un seul SDK multi-langage.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Sources -->
+      <section class="veille__section">
+        <h2 class="veille__section-title">Sources d'information</h2>
+        <div class="veille__sources-grid">
+
+          <div class="veille__source-card">
+            <span class="veille__source-cat">Blog</span>
+            <h4 class="veille__source-name">CNCF Blog</h4>
+            <p class="veille__source-desc">Actualités cloud-native, projets open source et observabilité.</p>
+          </div>
+
+          <div class="veille__source-card">
+            <span class="veille__source-cat">Blog</span>
+            <h4 class="veille__source-name">Datadog Engineering</h4>
+            <p class="veille__source-desc">Articles techniques sur le monitoring, l'APM et les dashboards.</p>
+          </div>
+
+          <div class="veille__source-card">
+            <span class="veille__source-cat">Docs</span>
+            <h4 class="veille__source-name">OpenTelemetry</h4>
+            <p class="veille__source-desc">Documentation officielle du standard d'instrumentation.</p>
+          </div>
+
+          <div class="veille__source-card">
+            <span class="veille__source-cat">Docs</span>
+            <h4 class="veille__source-name">Prometheus</h4>
+            <p class="veille__source-desc">Documentation officielle du moteur de métriques open source.</p>
+          </div>
+
+          <div class="veille__source-card">
+            <span class="veille__source-cat">Newsletter</span>
+            <h4 class="veille__source-name">TLDR</h4>
+            <p class="veille__source-desc">Newsletter quotidienne condensant les actualités tech, DevOps et cloud.</p>
+          </div>
+
+          <div class="veille__source-card">
+            <span class="veille__source-cat">Réseau</span>
+            <h4 class="veille__source-name">LinkedIn / Twitter</h4>
+            <p class="veille__source-desc">Experts DevOps et ingénieurs SRE partageant leur veille quotidienne.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="veille__section veille__conclusion">
+        <p class="veille__conclusion-text">
+          La veille en observabilité repose sur des sources fiables et régulières
+          permettant de rester à jour dans un domaine en constante évolution.
+        </p>
+      </section>
+
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Mandresy RAPHEHISON ~</h3>
+    </footer>
   </body>
 </html>
